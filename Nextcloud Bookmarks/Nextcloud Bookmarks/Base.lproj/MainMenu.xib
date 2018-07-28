@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Nextcloud_Bookmarks" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="kbZ-NZ-eiu" customClass="StatusMenuController" customModule="Nextcloud_Bookmarks" customModuleProvider="target">
+            <connections>
+                <outlet property="bookmarksMenu" destination="0BB-eV-qbq" id="mDc-D5-lRt"/>
+                <outlet property="bookmarksMenuItem" destination="n9X-NC-kub" id="GgF-w1-SjJ"/>
+                <outlet property="prefNote" destination="mvO-cz-P9X" id="grV-lA-FPX"/>
+                <outlet property="statusMenu" destination="Ju0-kt-TlH" id="TAb-pS-RjF"/>
+            </connections>
+        </customObject>
+        <menu id="Ju0-kt-TlH">
+            <items>
+                <menuItem title="Bookmarks" id="n9X-NC-kub">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Bookmarks" id="0BB-eV-qbq"/>
+                </menuItem>
+                <menuItem title="Open Preferences and login to your server" hidden="YES" id="mvO-cz-P9X">
+                    <attributedString key="attributedTitle"/>
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="qxn-dJ-gn5"/>
+                <menuItem title="Update" id="5z4-tA-Ral">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="updateClicked:" target="kbZ-NZ-eiu" id="eV0-GV-Nyd"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Preferences" id="H2t-Qn-12a">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="preferencesClicked:" target="kbZ-NZ-eiu" id="0i6-55-7Zv"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="amt-Gg-1sr"/>
+                <menuItem title="Quit" id="bjy-fW-hwG">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClicked:" target="kbZ-NZ-eiu" id="NBc-a0-Jjp"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="-92" y="-115"/>
+        </menu>
+    </objects>
+</document>

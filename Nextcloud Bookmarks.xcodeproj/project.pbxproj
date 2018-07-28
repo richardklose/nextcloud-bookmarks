@@ -13,6 +13,13 @@
 		1A3F989E210B3D4100440731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3F989C210B3D4100440731 /* Main.storyboard */; };
 		1A3F98AA210B3D4100440731 /* Nextcloud_BookmarksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F98A9210B3D4100440731 /* Nextcloud_BookmarksTests.swift */; };
 		1A3F98B5210B3D4100440731 /* Nextcloud_BookmarksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F98B4210B3D4100440731 /* Nextcloud_BookmarksUITests.swift */; };
+		1A3F98C9210B3D7400440731 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3F98C8210B3D7400440731 /* Cocoa.framework */; };
+		1A3F98CC210B3D7400440731 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F98CB210B3D7400440731 /* SafariExtensionHandler.swift */; };
+		1A3F98CE210B3D7400440731 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F98CD210B3D7400440731 /* SafariExtensionViewController.swift */; };
+		1A3F98D1210B3D7400440731 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A3F98CF210B3D7400440731 /* SafariExtensionViewController.xib */; };
+		1A3F98D4210B3D7400440731 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A3F98D3210B3D7400440731 /* script.js */; };
+		1A3F98D6210B3D7400440731 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1A3F98D5210B3D7400440731 /* ToolbarItemIcon.pdf */; };
+		1A3F98DA210B3D7400440731 /* Sync.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1A3F98C6210B3D7400440731 /* Sync.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +37,28 @@
 			remoteGlobalIDString = 1A3F9892210B3D3F00440731;
 			remoteInfo = "Nextcloud Bookmarks";
 		};
+		1A3F98D8210B3D7400440731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A3F988B210B3D3F00440731 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A3F98C5210B3D7400440731;
+			remoteInfo = Sync;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A3F98DE210B3D7400440731 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1A3F98DA210B3D7400440731 /* Sync.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1A3F9893210B3D3F00440731 /* Nextcloud Bookmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nextcloud Bookmarks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +74,15 @@
 		1A3F98B0210B3D4100440731 /* Nextcloud BookmarksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nextcloud BookmarksUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3F98B4210B3D4100440731 /* Nextcloud_BookmarksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nextcloud_BookmarksUITests.swift; sourceTree = "<group>"; };
 		1A3F98B6210B3D4100440731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A3F98C6210B3D7400440731 /* Sync.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Sync.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A3F98C8210B3D7400440731 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1A3F98CB210B3D7400440731 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		1A3F98CD210B3D7400440731 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		1A3F98D0210B3D7400440731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		1A3F98D2210B3D7400440731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A3F98D3210B3D7400440731 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		1A3F98D5210B3D7400440731 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		1A3F98D7210B3D7400440731 /* Sync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sync.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +107,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A3F98C3210B3D7400440731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3F98C9210B3D7400440731 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +124,8 @@
 				1A3F9895210B3D3F00440731 /* Nextcloud Bookmarks */,
 				1A3F98A8210B3D4100440731 /* Nextcloud BookmarksTests */,
 				1A3F98B3210B3D4100440731 /* Nextcloud BookmarksUITests */,
+				1A3F98CA210B3D7400440731 /* Sync */,
+				1A3F98C7210B3D7400440731 /* Frameworks */,
 				1A3F9894210B3D3F00440731 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +136,7 @@
 				1A3F9893210B3D3F00440731 /* Nextcloud Bookmarks.app */,
 				1A3F98A5210B3D4100440731 /* Nextcloud BookmarksTests.xctest */,
 				1A3F98B0210B3D4100440731 /* Nextcloud BookmarksUITests.xctest */,
+				1A3F98C6210B3D7400440731 /* Sync.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +172,28 @@
 			path = "Nextcloud BookmarksUITests";
 			sourceTree = "<group>";
 		};
+		1A3F98C7210B3D7400440731 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A3F98C8210B3D7400440731 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A3F98CA210B3D7400440731 /* Sync */ = {
+			isa = PBXGroup;
+			children = (
+				1A3F98CB210B3D7400440731 /* SafariExtensionHandler.swift */,
+				1A3F98CD210B3D7400440731 /* SafariExtensionViewController.swift */,
+				1A3F98CF210B3D7400440731 /* SafariExtensionViewController.xib */,
+				1A3F98D2210B3D7400440731 /* Info.plist */,
+				1A3F98D3210B3D7400440731 /* script.js */,
+				1A3F98D5210B3D7400440731 /* ToolbarItemIcon.pdf */,
+				1A3F98D7210B3D7400440731 /* Sync.entitlements */,
+			);
+			path = Sync;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,10 +204,12 @@
 				1A3F988F210B3D3F00440731 /* Sources */,
 				1A3F9890210B3D3F00440731 /* Frameworks */,
 				1A3F9891210B3D3F00440731 /* Resources */,
+				1A3F98DE210B3D7400440731 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1A3F98D9210B3D7400440731 /* PBXTargetDependency */,
 			);
 			name = "Nextcloud Bookmarks";
 			productName = "Nextcloud Bookmarks";
@@ -180,6 +252,23 @@
 			productReference = 1A3F98B0210B3D4100440731 /* Nextcloud BookmarksUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1A3F98C5210B3D7400440731 /* Sync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A3F98DB210B3D7400440731 /* Build configuration list for PBXNativeTarget "Sync" */;
+			buildPhases = (
+				1A3F98C2210B3D7400440731 /* Sources */,
+				1A3F98C3210B3D7400440731 /* Frameworks */,
+				1A3F98C4210B3D7400440731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sync;
+			productName = Sync;
+			productReference = 1A3F98C6210B3D7400440731 /* Sync.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +290,9 @@
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = 1A3F9892210B3D3F00440731;
 					};
+					1A3F98C5210B3D7400440731 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 1A3F988E210B3D3F00440731 /* Build configuration list for PBXProject "Nextcloud Bookmarks" */;
@@ -219,6 +311,7 @@
 				1A3F9892210B3D3F00440731 /* Nextcloud Bookmarks */,
 				1A3F98A4210B3D4100440731 /* Nextcloud BookmarksTests */,
 				1A3F98AF210B3D4100440731 /* Nextcloud BookmarksUITests */,
+				1A3F98C5210B3D7400440731 /* Sync */,
 			);
 		};
 /* End PBXProject section */
@@ -244,6 +337,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A3F98C4210B3D7400440731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3F98D6210B3D7400440731 /* ToolbarItemIcon.pdf in Resources */,
+				1A3F98D1210B3D7400440731 /* SafariExtensionViewController.xib in Resources */,
+				1A3F98D4210B3D7400440731 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +378,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A3F98C2210B3D7400440731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3F98CE210B3D7400440731 /* SafariExtensionViewController.swift in Sources */,
+				1A3F98CC210B3D7400440731 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,6 +400,11 @@
 			target = 1A3F9892210B3D3F00440731 /* Nextcloud Bookmarks */;
 			targetProxy = 1A3F98B1210B3D4100440731 /* PBXContainerItemProxy */;
 		};
+		1A3F98D9210B3D7400440731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A3F98C5210B3D7400440731 /* Sync */;
+			targetProxy = 1A3F98D8210B3D7400440731 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -297,6 +414,14 @@
 				1A3F989D210B3D4100440731 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A3F98CF210B3D7400440731 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A3F98D0210B3D7400440731 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -418,6 +543,7 @@
 		1A3F98BA210B3D4100440731 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Nextcloud Bookmarks/Nextcloud_Bookmarks.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -436,6 +562,7 @@
 		1A3F98BB210B3D4100440731 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Nextcloud Bookmarks/Nextcloud_Bookmarks.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +656,42 @@
 			};
 			name = Release;
 		};
+		1A3F98DC210B3D7400440731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Sync/Sync.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.richardklose.Nextcloud-Bookmarks.Sync";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		1A3F98DD210B3D7400440731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Sync/Sync.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.richardklose.Nextcloud-Bookmarks.Sync";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -564,6 +727,15 @@
 			buildConfigurations = (
 				1A3F98C0210B3D4100440731 /* Debug */,
 				1A3F98C1210B3D4100440731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A3F98DB210B3D7400440731 /* Build configuration list for PBXNativeTarget "Sync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A3F98DC210B3D7400440731 /* Debug */,
+				1A3F98DD210B3D7400440731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
