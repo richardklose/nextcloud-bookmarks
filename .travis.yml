@@ -5,6 +5,7 @@ script:
 - xcodebuild 
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
     secure: K59RH2hw2aIy+D99jrNdIxaQ0tTD3hRoDv08lXShBGXIFf18nz6XhLZjWQexIcL9ci0x/e6HcNMU3dv2MA23ruGWmLB6BGYk8+w1uQhIqy9oBQLM8WFzyFbEbE4du+iqhGIvReSjU1ml/LIxfLuWMraF7/LuTquA6jvWzBu9/zuntmhjeexlICCTvzC9uSuhOjq/t2d6/9GkAUj5zw+/JiLhUkVkeBO0UwnbpnTHCeekzqtez4BwH8u9pMIzc/lzaWLP4JyCToDnMfJbZMnKmVBEL7sL9a9VDOsMk8UNspOo/akGdHWNtx4TOyr7Ju5HxtnRSNzE3zRZ+Uc5OcwiMOdz/JdoSSiH1CqLaYhmmXfiSC0lArcP4PZ9nqT3i0rbZwvO2p8ds268P7R3TmqfV7tHugZTdw4H7a/BsW0N30LZLCbqY2Lsp+/oqOGCCmnVApwSnXZyajMe2r5vP/oD99lXUSXKrKSA9R+WIijxZw3K55GMa1qs/AR4rFNl9Xsj/b4dSduGXUnkUgS2jHO69B+7ajdzU0vHTzr/XRuqQ+0/xGXKesKW8ma4Mq8oUuP9xcLnTOtkHjW8+j6qFZbN1P0ZX7OlSDZndJH0CaCq2ofY5yFr6dd0yN0qwb0fvJG3CuXk5JtAieQAK2Hz4PoVOmV3fUBgQnzcbzhbmY8phXg=
   file: "$TRAVIS_BUILD_DIR/build/Release/Nextcloud Bookmarks.app"
