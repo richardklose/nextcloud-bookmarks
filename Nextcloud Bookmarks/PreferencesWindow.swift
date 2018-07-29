@@ -18,6 +18,15 @@ class PreferencesWindow: NSWindowController, NSWindowDelegate {
     @IBOutlet weak var usernameTextField: NSTextField!
     @IBOutlet weak var passwordTextField: NSSecureTextField!
     
+    @IBAction func saveButtonClicked(_ sender: NSButton) {
+        let defaults = UserDefaults.standard
+        defaults.setValue(serverTextField.stringValue, forKey: "server")
+        defaults.setValue(usernameTextField.stringValue, forKey: "username")
+        defaults.setValue(passwordTextField.stringValue, forKey: "password")
+        delegate?.preferencesDidUpdate()
+        self.close()
+    }
+    
     var delegate: PreferencesWindowDelegate?
     
     override var windowNibName : NSNib.Name! {
@@ -31,13 +40,4 @@ class PreferencesWindow: NSWindowController, NSWindowDelegate {
         self.window?.makeKeyAndOrderFront(nil)
         NSApp.activate(ignoringOtherApps: true)
     }
-    
-    func windowWillClose(_ notification: Notification) {
-        let defaults = UserDefaults.standard
-        defaults.setValue(serverTextField.stringValue, forKey: "server")
-        defaults.setValue(usernameTextField.stringValue, forKey: "username")
-        defaults.setValue(passwordTextField.stringValue, forKey: "password")
-        delegate?.preferencesDidUpdate()
-    }
-    
 }
