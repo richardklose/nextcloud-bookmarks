@@ -4,7 +4,7 @@ os: osx
 script:
 - xcodebuild
 before_deploy:
-- "zip -r build/Release/Nextcloud\ Bookmarks.zip build/Release/Nextcloud\ Bookmarks.app"
+- zip -r "build/Release/Nextcloud Bookmarks.zip" "build/Release/Nextcloud Bookmarks.app"
 deploy:
   provider: releases
   skip_cleanup: true
