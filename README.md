@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/richardklose/nextcloud-bookmarks.svg?branch=develop)](https://travis-ci.org/richardklose/nextcloud-bookmarks)
 # nextcloud-bookmarks
 A mac OS menu bar item for your nextcloud bookmarks
 
