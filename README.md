@@ -13,7 +13,7 @@ Just add server adress, username and password in the preferences and you're read
 
 ## Getting Started
 ### Install
-If you just want to use Nextcloud Bookmarks, you can (soon) download it from the relases page.
+If you just want to use Nextcloud Bookmarks, you can download it from the [relases page](https://github.com/richardklose/nextcloud-bookmarks/releases).
 
 ### Build
 You can build the app from scratch. Aside from Xcode 9 it has no further dependencies, so with Xcode installed you can build it from the commandline with `xcodebuild` or by running it from inside Xcode.
