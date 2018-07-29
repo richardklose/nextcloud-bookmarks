@@ -7,295 +7,113 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A3F9897210B3D3F00440731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F9896210B3D3F00440731 /* AppDelegate.swift */; };
-		1A3F9899210B3D3F00440731 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F9898210B3D3F00440731 /* ViewController.swift */; };
-		1A3F989B210B3D4100440731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3F989A210B3D4100440731 /* Assets.xcassets */; };
-		1A3F989E210B3D4100440731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3F989C210B3D4100440731 /* Main.storyboard */; };
-		1A3F98AA210B3D4100440731 /* Nextcloud_BookmarksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F98A9210B3D4100440731 /* Nextcloud_BookmarksTests.swift */; };
-		1A3F98B5210B3D4100440731 /* Nextcloud_BookmarksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F98B4210B3D4100440731 /* Nextcloud_BookmarksUITests.swift */; };
-		1A3F98C9210B3D7400440731 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3F98C8210B3D7400440731 /* Cocoa.framework */; };
-		1A3F98CC210B3D7400440731 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F98CB210B3D7400440731 /* SafariExtensionHandler.swift */; };
-		1A3F98CE210B3D7400440731 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F98CD210B3D7400440731 /* SafariExtensionViewController.swift */; };
-		1A3F98D1210B3D7400440731 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A3F98CF210B3D7400440731 /* SafariExtensionViewController.xib */; };
-		1A3F98D4210B3D7400440731 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A3F98D3210B3D7400440731 /* script.js */; };
-		1A3F98D6210B3D7400440731 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1A3F98D5210B3D7400440731 /* ToolbarItemIcon.pdf */; };
-		1A3F98DA210B3D7400440731 /* Sync.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1A3F98C6210B3D7400440731 /* Sync.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1A45F190210CC718006BDB9D /* AddBookmarkWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45F18E210CC718006BDB9D /* AddBookmarkWindow.swift */; };
+		1A45F191210CC718006BDB9D /* AddBookmarkWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A45F18F210CC718006BDB9D /* AddBookmarkWindow.xib */; };
+		1AA68C8F210B3ED300A3E399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA68C8E210B3ED300A3E399 /* AppDelegate.swift */; };
+		1AA68C91210B3ED300A3E399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA68C90210B3ED300A3E399 /* Assets.xcassets */; };
+		1AA68C94210B3ED300A3E399 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA68C92210B3ED300A3E399 /* MainMenu.xib */; };
+		1AA68C9D210B43B800A3E399 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA68C9C210B43B800A3E399 /* StatusMenuController.swift */; };
+		1AA68C9F210B453400A3E399 /* BookmarksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA68C9E210B453400A3E399 /* BookmarksAPI.swift */; };
+		1AA68CA2210C5F4400A3E399 /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA68CA0210C5F4400A3E399 /* PreferencesWindow.swift */; };
+		1AA68CA3210C5F4400A3E399 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA68CA1210C5F4400A3E399 /* PreferencesWindow.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1A3F98A6210B3D4100440731 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1A3F988B210B3D3F00440731 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A3F9892210B3D3F00440731;
-			remoteInfo = "Nextcloud Bookmarks";
-		};
-		1A3F98B1210B3D4100440731 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1A3F988B210B3D3F00440731 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A3F9892210B3D3F00440731;
-			remoteInfo = "Nextcloud Bookmarks";
-		};
-		1A3F98D8210B3D7400440731 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1A3F988B210B3D3F00440731 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A3F98C5210B3D7400440731;
-			remoteInfo = Sync;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		1A3F98DE210B3D7400440731 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				1A3F98DA210B3D7400440731 /* Sync.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		1A3F9893210B3D3F00440731 /* Nextcloud Bookmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nextcloud Bookmarks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A3F9896210B3D3F00440731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A3F9898210B3D3F00440731 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1A3F989A210B3D4100440731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A3F989D210B3D4100440731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A3F989F210B3D4100440731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A3F98A0210B3D4100440731 /* Nextcloud_Bookmarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nextcloud_Bookmarks.entitlements; sourceTree = "<group>"; };
-		1A3F98A5210B3D4100440731 /* Nextcloud BookmarksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nextcloud BookmarksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A3F98A9210B3D4100440731 /* Nextcloud_BookmarksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nextcloud_BookmarksTests.swift; sourceTree = "<group>"; };
-		1A3F98AB210B3D4100440731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A3F98B0210B3D4100440731 /* Nextcloud BookmarksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nextcloud BookmarksUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A3F98B4210B3D4100440731 /* Nextcloud_BookmarksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nextcloud_BookmarksUITests.swift; sourceTree = "<group>"; };
-		1A3F98B6210B3D4100440731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A3F98C6210B3D7400440731 /* Sync.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Sync.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A3F98C8210B3D7400440731 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		1A3F98CB210B3D7400440731 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
-		1A3F98CD210B3D7400440731 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
-		1A3F98D0210B3D7400440731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
-		1A3F98D2210B3D7400440731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A3F98D3210B3D7400440731 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
-		1A3F98D5210B3D7400440731 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
-		1A3F98D7210B3D7400440731 /* Sync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sync.entitlements; sourceTree = "<group>"; };
+		1A45F18E210CC718006BDB9D /* AddBookmarkWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookmarkWindow.swift; sourceTree = "<group>"; };
+		1A45F18F210CC718006BDB9D /* AddBookmarkWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBookmarkWindow.xib; sourceTree = "<group>"; };
+		1AA68C8B210B3ED300A3E399 /* Nextcloud Bookmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nextcloud Bookmarks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA68C8E210B3ED300A3E399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AA68C90210B3ED300A3E399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AA68C93210B3ED300A3E399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1AA68C95210B3ED300A3E399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AA68C96210B3ED300A3E399 /* Nextcloud_Bookmarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nextcloud_Bookmarks.entitlements; sourceTree = "<group>"; };
+		1AA68C9C210B43B800A3E399 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		1AA68C9E210B453400A3E399 /* BookmarksAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksAPI.swift; sourceTree = "<group>"; };
+		1AA68CA0210C5F4400A3E399 /* PreferencesWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
+		1AA68CA1210C5F4400A3E399 /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1A3F9890210B3D3F00440731 /* Frameworks */ = {
+		1AA68C88210B3ED300A3E399 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3F98A2210B3D4100440731 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3F98AD210B3D4100440731 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3F98C3210B3D7400440731 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A3F98C9210B3D7400440731 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A3F988A210B3D3F00440731 = {
+		1AA68C82210B3ED300A3E399 = {
 			isa = PBXGroup;
 			children = (
-				1A3F9895210B3D3F00440731 /* Nextcloud Bookmarks */,
-				1A3F98A8210B3D4100440731 /* Nextcloud BookmarksTests */,
-				1A3F98B3210B3D4100440731 /* Nextcloud BookmarksUITests */,
-				1A3F98CA210B3D7400440731 /* Sync */,
-				1A3F98C7210B3D7400440731 /* Frameworks */,
-				1A3F9894210B3D3F00440731 /* Products */,
+				1AA68C8D210B3ED300A3E399 /* Nextcloud Bookmarks */,
+				1AA68C8C210B3ED300A3E399 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1A3F9894210B3D3F00440731 /* Products */ = {
+		1AA68C8C210B3ED300A3E399 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A3F9893210B3D3F00440731 /* Nextcloud Bookmarks.app */,
-				1A3F98A5210B3D4100440731 /* Nextcloud BookmarksTests.xctest */,
-				1A3F98B0210B3D4100440731 /* Nextcloud BookmarksUITests.xctest */,
-				1A3F98C6210B3D7400440731 /* Sync.appex */,
+				1AA68C8B210B3ED300A3E399 /* Nextcloud Bookmarks.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A3F9895210B3D3F00440731 /* Nextcloud Bookmarks */ = {
+		1AA68C8D210B3ED300A3E399 /* Nextcloud Bookmarks */ = {
 			isa = PBXGroup;
 			children = (
-				1A3F9896210B3D3F00440731 /* AppDelegate.swift */,
-				1A3F9898210B3D3F00440731 /* ViewController.swift */,
-				1A3F989A210B3D4100440731 /* Assets.xcassets */,
-				1A3F989C210B3D4100440731 /* Main.storyboard */,
-				1A3F989F210B3D4100440731 /* Info.plist */,
-				1A3F98A0210B3D4100440731 /* Nextcloud_Bookmarks.entitlements */,
+				1AA68C8E210B3ED300A3E399 /* AppDelegate.swift */,
+				1AA68C90210B3ED300A3E399 /* Assets.xcassets */,
+				1AA68C9C210B43B800A3E399 /* StatusMenuController.swift */,
+				1AA68C92210B3ED300A3E399 /* MainMenu.xib */,
+				1A45F18E210CC718006BDB9D /* AddBookmarkWindow.swift */,
+				1A45F18F210CC718006BDB9D /* AddBookmarkWindow.xib */,
+				1AA68CA0210C5F4400A3E399 /* PreferencesWindow.swift */,
+				1AA68CA1210C5F4400A3E399 /* PreferencesWindow.xib */,
+				1AA68C9E210B453400A3E399 /* BookmarksAPI.swift */,
+				1AA68C95210B3ED300A3E399 /* Info.plist */,
+				1AA68C96210B3ED300A3E399 /* Nextcloud_Bookmarks.entitlements */,
 			);
 			path = "Nextcloud Bookmarks";
-			sourceTree = "<group>";
-		};
-		1A3F98A8210B3D4100440731 /* Nextcloud BookmarksTests */ = {
-			isa = PBXGroup;
-			children = (
-				1A3F98A9210B3D4100440731 /* Nextcloud_BookmarksTests.swift */,
-				1A3F98AB210B3D4100440731 /* Info.plist */,
-			);
-			path = "Nextcloud BookmarksTests";
-			sourceTree = "<group>";
-		};
-		1A3F98B3210B3D4100440731 /* Nextcloud BookmarksUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1A3F98B4210B3D4100440731 /* Nextcloud_BookmarksUITests.swift */,
-				1A3F98B6210B3D4100440731 /* Info.plist */,
-			);
-			path = "Nextcloud BookmarksUITests";
-			sourceTree = "<group>";
-		};
-		1A3F98C7210B3D7400440731 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1A3F98C8210B3D7400440731 /* Cocoa.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1A3F98CA210B3D7400440731 /* Sync */ = {
-			isa = PBXGroup;
-			children = (
-				1A3F98CB210B3D7400440731 /* SafariExtensionHandler.swift */,
-				1A3F98CD210B3D7400440731 /* SafariExtensionViewController.swift */,
-				1A3F98CF210B3D7400440731 /* SafariExtensionViewController.xib */,
-				1A3F98D2210B3D7400440731 /* Info.plist */,
-				1A3F98D3210B3D7400440731 /* script.js */,
-				1A3F98D5210B3D7400440731 /* ToolbarItemIcon.pdf */,
-				1A3F98D7210B3D7400440731 /* Sync.entitlements */,
-			);
-			path = Sync;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A3F9892210B3D3F00440731 /* Nextcloud Bookmarks */ = {
+		1AA68C8A210B3ED300A3E399 /* Nextcloud Bookmarks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A3F98B9210B3D4100440731 /* Build configuration list for PBXNativeTarget "Nextcloud Bookmarks" */;
+			buildConfigurationList = 1AA68C99210B3ED300A3E399 /* Build configuration list for PBXNativeTarget "Nextcloud Bookmarks" */;
 			buildPhases = (
-				1A3F988F210B3D3F00440731 /* Sources */,
-				1A3F9890210B3D3F00440731 /* Frameworks */,
-				1A3F9891210B3D3F00440731 /* Resources */,
-				1A3F98DE210B3D7400440731 /* Embed App Extensions */,
+				1AA68C87210B3ED300A3E399 /* Sources */,
+				1AA68C88210B3ED300A3E399 /* Frameworks */,
+				1AA68C89210B3ED300A3E399 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1A3F98D9210B3D7400440731 /* PBXTargetDependency */,
 			);
 			name = "Nextcloud Bookmarks";
 			productName = "Nextcloud Bookmarks";
-			productReference = 1A3F9893210B3D3F00440731 /* Nextcloud Bookmarks.app */;
+			productReference = 1AA68C8B210B3ED300A3E399 /* Nextcloud Bookmarks.app */;
 			productType = "com.apple.product-type.application";
-		};
-		1A3F98A4210B3D4100440731 /* Nextcloud BookmarksTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A3F98BC210B3D4100440731 /* Build configuration list for PBXNativeTarget "Nextcloud BookmarksTests" */;
-			buildPhases = (
-				1A3F98A1210B3D4100440731 /* Sources */,
-				1A3F98A2210B3D4100440731 /* Frameworks */,
-				1A3F98A3210B3D4100440731 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1A3F98A7210B3D4100440731 /* PBXTargetDependency */,
-			);
-			name = "Nextcloud BookmarksTests";
-			productName = "Nextcloud BookmarksTests";
-			productReference = 1A3F98A5210B3D4100440731 /* Nextcloud BookmarksTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1A3F98AF210B3D4100440731 /* Nextcloud BookmarksUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A3F98BF210B3D4100440731 /* Build configuration list for PBXNativeTarget "Nextcloud BookmarksUITests" */;
-			buildPhases = (
-				1A3F98AC210B3D4100440731 /* Sources */,
-				1A3F98AD210B3D4100440731 /* Frameworks */,
-				1A3F98AE210B3D4100440731 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1A3F98B2210B3D4100440731 /* PBXTargetDependency */,
-			);
-			name = "Nextcloud BookmarksUITests";
-			productName = "Nextcloud BookmarksUITests";
-			productReference = 1A3F98B0210B3D4100440731 /* Nextcloud BookmarksUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		1A3F98C5210B3D7400440731 /* Sync */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A3F98DB210B3D7400440731 /* Build configuration list for PBXNativeTarget "Sync" */;
-			buildPhases = (
-				1A3F98C2210B3D7400440731 /* Sources */,
-				1A3F98C3210B3D7400440731 /* Frameworks */,
-				1A3F98C4210B3D7400440731 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Sync;
-			productName = Sync;
-			productReference = 1A3F98C6210B3D7400440731 /* Sync.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1A3F988B210B3D3F00440731 /* Project object */ = {
+		1AA68C83210B3ED300A3E399 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Richard Klose";
 				TargetAttributes = {
-					1A3F9892210B3D3F00440731 = {
-						CreatedOnToolsVersion = 9.4.1;
-					};
-					1A3F98A4210B3D4100440731 = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = 1A3F9892210B3D3F00440731;
-					};
-					1A3F98AF210B3D4100440731 = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = 1A3F9892210B3D3F00440731;
-					};
-					1A3F98C5210B3D7400440731 = {
+					1AA68C8A210B3ED300A3E399 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 1A3F988E210B3D3F00440731 /* Build configuration list for PBXProject "Nextcloud Bookmarks" */;
+			buildConfigurationList = 1AA68C86210B3ED300A3E399 /* Build configuration list for PBXProject "Nextcloud Bookmarks" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -303,131 +121,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 1A3F988A210B3D3F00440731;
-			productRefGroup = 1A3F9894210B3D3F00440731 /* Products */;
+			mainGroup = 1AA68C82210B3ED300A3E399;
+			productRefGroup = 1AA68C8C210B3ED300A3E399 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A3F9892210B3D3F00440731 /* Nextcloud Bookmarks */,
-				1A3F98A4210B3D4100440731 /* Nextcloud BookmarksTests */,
-				1A3F98AF210B3D4100440731 /* Nextcloud BookmarksUITests */,
-				1A3F98C5210B3D7400440731 /* Sync */,
+				1AA68C8A210B3ED300A3E399 /* Nextcloud Bookmarks */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1A3F9891210B3D3F00440731 /* Resources */ = {
+		1AA68C89210B3ED300A3E399 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A3F989B210B3D4100440731 /* Assets.xcassets in Resources */,
-				1A3F989E210B3D4100440731 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3F98A3210B3D4100440731 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3F98AE210B3D4100440731 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3F98C4210B3D7400440731 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A3F98D6210B3D7400440731 /* ToolbarItemIcon.pdf in Resources */,
-				1A3F98D1210B3D7400440731 /* SafariExtensionViewController.xib in Resources */,
-				1A3F98D4210B3D7400440731 /* script.js in Resources */,
+				1AA68C91210B3ED300A3E399 /* Assets.xcassets in Resources */,
+				1A45F191210CC718006BDB9D /* AddBookmarkWindow.xib in Resources */,
+				1AA68CA3210C5F4400A3E399 /* PreferencesWindow.xib in Resources */,
+				1AA68C94210B3ED300A3E399 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1A3F988F210B3D3F00440731 /* Sources */ = {
+		1AA68C87210B3ED300A3E399 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A3F9899210B3D3F00440731 /* ViewController.swift in Sources */,
-				1A3F9897210B3D3F00440731 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3F98A1210B3D4100440731 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A3F98AA210B3D4100440731 /* Nextcloud_BookmarksTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3F98AC210B3D4100440731 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A3F98B5210B3D4100440731 /* Nextcloud_BookmarksUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3F98C2210B3D7400440731 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A3F98CE210B3D7400440731 /* SafariExtensionViewController.swift in Sources */,
-				1A3F98CC210B3D7400440731 /* SafariExtensionHandler.swift in Sources */,
+				1AA68C9D210B43B800A3E399 /* StatusMenuController.swift in Sources */,
+				1A45F190210CC718006BDB9D /* AddBookmarkWindow.swift in Sources */,
+				1AA68C8F210B3ED300A3E399 /* AppDelegate.swift in Sources */,
+				1AA68CA2210C5F4400A3E399 /* PreferencesWindow.swift in Sources */,
+				1AA68C9F210B453400A3E399 /* BookmarksAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		1A3F98A7210B3D4100440731 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A3F9892210B3D3F00440731 /* Nextcloud Bookmarks */;
-			targetProxy = 1A3F98A6210B3D4100440731 /* PBXContainerItemProxy */;
-		};
-		1A3F98B2210B3D4100440731 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A3F9892210B3D3F00440731 /* Nextcloud Bookmarks */;
-			targetProxy = 1A3F98B1210B3D4100440731 /* PBXContainerItemProxy */;
-		};
-		1A3F98D9210B3D7400440731 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A3F98C5210B3D7400440731 /* Sync */;
-			targetProxy = 1A3F98D8210B3D7400440731 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		1A3F989C210B3D4100440731 /* Main.storyboard */ = {
+		1AA68C92210B3ED300A3E399 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1A3F989D210B3D4100440731 /* Base */,
+				1AA68C93210B3ED300A3E399 /* Base */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1A3F98CF210B3D7400440731 /* SafariExtensionViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A3F98D0210B3D7400440731 /* Base */,
-			);
-			name = SafariExtensionViewController.xib;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1A3F98B7210B3D4100440731 /* Debug */ = {
+		1AA68C97210B3ED300A3E399 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -487,7 +232,7 @@
 			};
 			name = Debug;
 		};
-		1A3F98B8210B3D4100440731 /* Release */ = {
+		1AA68C98210B3ED300A3E399 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -540,12 +285,10 @@
 			};
 			name = Release;
 		};
-		1A3F98BA210B3D4100440731 /* Debug */ = {
+		1AA68C9A210B3ED300A3E399 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Nextcloud Bookmarks/Nextcloud_Bookmarks.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Nextcloud Bookmarks/Info.plist";
@@ -559,12 +302,10 @@
 			};
 			name = Debug;
 		};
-		1A3F98BB210B3D4100440731 /* Release */ = {
+		1AA68C9B210B3ED300A3E399 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Nextcloud Bookmarks/Nextcloud_Bookmarks.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Nextcloud Bookmarks/Info.plist";
@@ -574,120 +315,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.richardklose.Nextcloud-Bookmarks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		1A3F98BD210B3D4100440731 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Nextcloud BookmarksTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.richardklose.Nextcloud-BookmarksTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nextcloud Bookmarks.app/Contents/MacOS/Nextcloud Bookmarks";
-			};
-			name = Debug;
-		};
-		1A3F98BE210B3D4100440731 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Nextcloud BookmarksTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.richardklose.Nextcloud-BookmarksTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nextcloud Bookmarks.app/Contents/MacOS/Nextcloud Bookmarks";
-			};
-			name = Release;
-		};
-		1A3F98C0210B3D4100440731 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Nextcloud BookmarksUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.richardklose.Nextcloud-BookmarksUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = "Nextcloud Bookmarks";
-			};
-			name = Debug;
-		};
-		1A3F98C1210B3D4100440731 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Nextcloud BookmarksUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.richardklose.Nextcloud-BookmarksUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = "Nextcloud Bookmarks";
-			};
-			name = Release;
-		};
-		1A3F98DC210B3D7400440731 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Sync/Sync.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sync/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.richardklose.Nextcloud-Bookmarks.Sync";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		1A3F98DD210B3D7400440731 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Sync/Sync.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sync/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.richardklose.Nextcloud-Bookmarks.Sync";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -695,52 +322,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A3F988E210B3D3F00440731 /* Build configuration list for PBXProject "Nextcloud Bookmarks" */ = {
+		1AA68C86210B3ED300A3E399 /* Build configuration list for PBXProject "Nextcloud Bookmarks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A3F98B7210B3D4100440731 /* Debug */,
-				1A3F98B8210B3D4100440731 /* Release */,
+				1AA68C97210B3ED300A3E399 /* Debug */,
+				1AA68C98210B3ED300A3E399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A3F98B9210B3D4100440731 /* Build configuration list for PBXNativeTarget "Nextcloud Bookmarks" */ = {
+		1AA68C99210B3ED300A3E399 /* Build configuration list for PBXNativeTarget "Nextcloud Bookmarks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A3F98BA210B3D4100440731 /* Debug */,
-				1A3F98BB210B3D4100440731 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A3F98BC210B3D4100440731 /* Build configuration list for PBXNativeTarget "Nextcloud BookmarksTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A3F98BD210B3D4100440731 /* Debug */,
-				1A3F98BE210B3D4100440731 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A3F98BF210B3D4100440731 /* Build configuration list for PBXNativeTarget "Nextcloud BookmarksUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A3F98C0210B3D4100440731 /* Debug */,
-				1A3F98C1210B3D4100440731 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A3F98DB210B3D7400440731 /* Build configuration list for PBXNativeTarget "Sync" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A3F98DC210B3D7400440731 /* Debug */,
-				1A3F98DD210B3D7400440731 /* Release */,
+				1AA68C9A210B3ED300A3E399 /* Debug */,
+				1AA68C9B210B3ED300A3E399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1A3F988B210B3D3F00440731 /* Project object */;
+	rootObject = 1AA68C83210B3ED300A3E399 /* Project object */;
 }
