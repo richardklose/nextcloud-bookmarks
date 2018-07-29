@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A45F190210CC718006BDB9D /* AddBookmarkWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45F18E210CC718006BDB9D /* AddBookmarkWindow.swift */; };
+		1A45F191210CC718006BDB9D /* AddBookmarkWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A45F18F210CC718006BDB9D /* AddBookmarkWindow.xib */; };
 		1AA68C8F210B3ED300A3E399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA68C8E210B3ED300A3E399 /* AppDelegate.swift */; };
 		1AA68C91210B3ED300A3E399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA68C90210B3ED300A3E399 /* Assets.xcassets */; };
 		1AA68C94210B3ED300A3E399 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA68C92210B3ED300A3E399 /* MainMenu.xib */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A45F18E210CC718006BDB9D /* AddBookmarkWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookmarkWindow.swift; sourceTree = "<group>"; };
+		1A45F18F210CC718006BDB9D /* AddBookmarkWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBookmarkWindow.xib; sourceTree = "<group>"; };
 		1AA68C8B210B3ED300A3E399 /* Nextcloud Bookmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nextcloud Bookmarks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA68C8E210B3ED300A3E399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AA68C90210B3ED300A3E399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				1AA68C90210B3ED300A3E399 /* Assets.xcassets */,
 				1AA68C9C210B43B800A3E399 /* StatusMenuController.swift */,
 				1AA68C92210B3ED300A3E399 /* MainMenu.xib */,
+				1A45F18E210CC718006BDB9D /* AddBookmarkWindow.swift */,
+				1A45F18F210CC718006BDB9D /* AddBookmarkWindow.xib */,
 				1AA68CA0210C5F4400A3E399 /* PreferencesWindow.swift */,
 				1AA68CA1210C5F4400A3E399 /* PreferencesWindow.xib */,
 				1AA68C9E210B453400A3E399 /* BookmarksAPI.swift */,
@@ -131,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AA68C91210B3ED300A3E399 /* Assets.xcassets in Resources */,
+				1A45F191210CC718006BDB9D /* AddBookmarkWindow.xib in Resources */,
 				1AA68CA3210C5F4400A3E399 /* PreferencesWindow.xib in Resources */,
 				1AA68C94210B3ED300A3E399 /* MainMenu.xib in Resources */,
 			);
@@ -144,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AA68C9D210B43B800A3E399 /* StatusMenuController.swift in Sources */,
+				1A45F190210CC718006BDB9D /* AddBookmarkWindow.swift in Sources */,
 				1AA68C8F210B3ED300A3E399 /* AppDelegate.swift in Sources */,
 				1AA68CA2210C5F4400A3E399 /* PreferencesWindow.swift in Sources */,
 				1AA68C9F210B453400A3E399 /* BookmarksAPI.swift in Sources */,

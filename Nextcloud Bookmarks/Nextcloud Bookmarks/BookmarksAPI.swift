@@ -44,8 +44,7 @@ class BookmarksAPI {
         
     }
     
-    func fetchBookmarks(success: @escaping (Array<Bookmark>) -> Void, failed: @escaping (NSError) -> Void) {
-        
+    func prepareRequest(path: String) -> URLRequest {
         let server = UserDefaults.standard.string(forKey: "server") ?? ""
         let username = UserDefaults.standard.string(forKey: "username") ?? ""
         let password = UserDefaults.standard.string(forKey: "password") ?? ""
@@ -54,12 +53,17 @@ class BookmarksAPI {
         let loginData = loginString.data(using: String.Encoding.utf8)!
         let base64LoginString = loginData.base64EncodedString()
         
-        let session = URLSession.shared
-        let url = URL(string: "\(server)/index.php/apps/bookmarks/public/rest/v2/bookmark")
+        let url = URL(string: "\(server)\(path)")
         var request = URLRequest(url: url!)
-        request.httpMethod = "GET"
         request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
         
+        return request
+    }
+    
+    func fetchBookmarks(success: @escaping (Array<Bookmark>) -> Void, failed: @escaping (NSError) -> Void) {
+        var request = prepareRequest(path: "/index.php/apps/bookmarks/public/rest/v2/bookmark")
+        request.httpMethod = "GET"
+        let session = URLSession.shared
         let task = session.dataTask(with: request as URLRequest) { data, response, err in
             if let error = err {
                 NSLog("nextcloud api error: \(error)")
@@ -71,9 +75,34 @@ class BookmarksAPI {
                 case 200:
                     let bookmarks: Array<Bookmark> = self.BookmarksfromJSON(data: data!)
                     success(bookmarks)
-                case 401:
-                    NSLog("401 unauthorized")
-                    
+                default:
+                    let error = NSError(
+                        domain:HTTPURLResponse.localizedString(forStatusCode: httpResponse.statusCode),
+                        code: httpResponse.statusCode
+                    );
+                    failed(error)
+                    NSLog("Response: %d %@", httpResponse.statusCode, HTTPURLResponse.localizedString(forStatusCode: httpResponse.statusCode))
+                }
+            }
+        }
+        task.resume()
+    }
+    
+    func addBookmark(url: String, success: @escaping () -> Void, failed: @escaping (NSError) -> Void) {
+        let query = url.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed.inverted)
+        var request = prepareRequest(path: "/index.php/apps/bookmarks/public/rest/v2/bookmark?url=" + query!)
+        request.httpMethod = "POST"
+        let session = URLSession.shared
+        let task = session.dataTask(with: request as URLRequest) { data, response, err in
+            if let error = err {
+                NSLog("nextcloud api error: \(error)")
+                failed(NSError(domain: error.localizedDescription, code: 400))
+            }
+            
+            if let httpResponse = response as? HTTPURLResponse {
+                switch httpResponse.statusCode {
+                case 200:
+                    success()
                 default:
                     let error = NSError(
                         domain:HTTPURLResponse.localizedString(forStatusCode: httpResponse.statusCode),

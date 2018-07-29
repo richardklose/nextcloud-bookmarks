@@ -8,7 +8,8 @@
 
 import Cocoa
 
-class StatusMenuController: NSObject, PreferencesWindowDelegate {
+class StatusMenuController: NSObject, PreferencesWindowDelegate, AddBookmarkWindowDelegate {
+    
     @IBOutlet weak var statusMenu: NSMenu!
     @IBOutlet weak var prefNote: NSMenuItem!
     @IBOutlet weak var bookmarksMenu: NSMenu!
@@ -17,6 +18,7 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     let bookmarksAPI = BookmarksAPI()
     var preferencesWindow: PreferencesWindow!
+    var addBookmarkWindow: AddBookmarkWindow!
     
     @IBAction func updateClicked(_ sender: NSMenuItem) {
         updateBookmarks()
@@ -30,13 +32,22 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
         NSApplication.shared.terminate(self)
     }
     
+    @IBAction func addBookmarkClicked(_ sender: NSMenuItem) {
+        addBookmarkWindow.showWindow(self)
+    }
+    
     override func awakeFromNib() {
         let icon = NSImage(named: NSImage.Name(rawValue: "icon"))
         icon?.isTemplate = true
         statusItem.image = icon
         statusItem.menu = statusMenu
+        
         preferencesWindow = PreferencesWindow()
         preferencesWindow.delegate = self
+        
+        addBookmarkWindow = AddBookmarkWindow()
+        addBookmarkWindow.delegate = self
+        
         updateBookmarks()
     }
     
@@ -45,6 +56,10 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
     }
     
     func preferencesDidUpdate() {
+        updateBookmarks()
+    }
+    
+    func addedBookmark() {
         updateBookmarks()
     }
     

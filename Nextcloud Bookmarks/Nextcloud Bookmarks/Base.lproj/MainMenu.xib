@@ -10,7 +10,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Nextcloud_Bookmarks" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <customObject id="kbZ-NZ-eiu" customClass="StatusMenuController" customModule="Nextcloud_Bookmarks" customModuleProvider="target">
@@ -26,6 +26,12 @@
                 <menuItem title="Bookmarks" id="n9X-NC-kub">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Bookmarks" id="0BB-eV-qbq"/>
+                </menuItem>
+                <menuItem title="Add Bookmark" id="A74-ON-6Pj">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="addBookmarkClicked:" target="kbZ-NZ-eiu" id="oDb-ql-E0T"/>
+                    </connections>
                 </menuItem>
                 <menuItem title="Open Preferences and login to your server" hidden="YES" id="mvO-cz-P9X">
                     <attributedString key="attributedTitle"/>
