@@ -61,7 +61,7 @@ class BookmarksAPI {
     }
     
     func fetchBookmarks(success: @escaping (Array<Bookmark>) -> Void, failed: @escaping (NSError) -> Void) {
-        var request = prepareRequest(path: "/index.php/apps/bookmarks/public/rest/v2/bookmark")
+        var request = prepareRequest(path: "/index.php/apps/bookmarks/public/rest/v2/bookmark?page=-1")
         request.httpMethod = "GET"
         let session = URLSession.shared
         let task = session.dataTask(with: request as URLRequest) { data, response, err in
